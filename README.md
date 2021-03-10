@@ -1,8 +1,10 @@
 # voice-cloning
-## 1. English-deepvoice3
+## 1. Deepvoice3
+### 1.1. English
 https://github.com/r9y9/deepvoice3_pytorch
 
 https://uos-deep-learning.tistory.com/20
-## 2. Korean-deepvoice3
-## 3. Korean-LPCNet
-## 4. Korean-Tensoflow TTS
+
+### 1.2. Korean
+## 2. LPCNet
+## 3. Tensoflow TTS
