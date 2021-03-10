@@ -1,4 +1,4 @@
-# voice-cloning
+# Voice Cloning
 ## 1. Deepvoice3
 ### 1.1. English
 https://github.com/r9y9/deepvoice3_pytorch
