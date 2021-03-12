@@ -99,7 +99,6 @@ pip install -e ".[bin]"
 - 3에서 clone한 [deepvoice3_pytorch] 폴더 안에 [data] 폴더를 만들고, 그 안에 미리 다운 받은 LJSpeech data를 넣어 놓음.
 
 #### 2. Preprocessing
-
 ```python
 python preprocess.py ${dataset_name} ${dataset_path} ${out_dir} --preset=<json>
 # LJSpeech data
@@ -130,6 +129,7 @@ python synthesis.py ${checkpoint_path} ${text_list.txt} ${output_dir} --preset=<
 # LJSpeech data
 python synthesis.py ./checkpoint_step000020000.pth test_list.txt ./output_dir --preset=presets/deepvoice3_ljspeech.json
 ```
+
 ## 2. Deepvoice3_Korean
 ## 3. LPCNet
 ## 4. Tensoflow TTS
