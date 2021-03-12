@@ -140,9 +140,14 @@ python train.py --preset=presets/deepvoice3_ljspeech.json --data-root=./data/ljs
       ![folder](https://user-images.githubusercontent.com/42113942/110911875-97139080-8356-11eb-81f3-0bafc400980c.JPG)
 
 - UserWarning
+  - 해결하지 않아도 돌아감.
 
-  ![userwarning_2](https://user-images.githubusercontent.com/42113942/110914816-38501600-835a-11eb-8250-a8df89051fed.JPG)
- 
+  ![userwarning_2](https://user-images.githubusercontent.com/42113942/110926114-583a0680-8367-11eb-998f-bbc7a1664242.JPG)
+
+- 10,000 step마다 .pth 파일, .png 파일, .wav 파일 기록함.
+
+  ![checkpoint](https://user-images.githubusercontent.com/42113942/110926199-71db4e00-8367-11eb-9321-dd8610150d98.JPG)
+
 #### 4. Monitor with Tensorboard
 ```python
 pip install tensorboard
