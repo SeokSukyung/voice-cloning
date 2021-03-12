@@ -14,7 +14,8 @@
 
 ##### LJSpeech (en)
 - https://keithito.com/LJ-Speech-Dataset/
-- recorded 2016-2017 by LibriVox project; texts published between 1884-1964 128 kbps MP3 files
+- recorded 2016-2017 by LibriVox project
+  > cf) texts (1884-1964)
 - clip
   - segmented automatically based on silences (generally align with sentence or clause boundaries, but not always)
   - duration (mean: 6.57s / min: 1.11s / max: 10.10s), mean words per clip: 17.23
