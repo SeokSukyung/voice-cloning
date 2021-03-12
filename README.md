@@ -12,8 +12,6 @@
 |word/charactor/sentence|225,715 words/1,308,678 characters|44,000 sentences
 |Text|7 non-fiction books|400 sentences from a newspaper, the rainbow passage, and  an elicitation paragraph|
 
-|Transcription|19
-
 ##### LJSpeech (en)
 - https://keithito.com/LJ-Speech-Dataset/
 - recorded 2016-2017 by LibriVox project; texts published between 1884-1964 128 kbps MP3 files
