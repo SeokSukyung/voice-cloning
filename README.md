@@ -1,9 +1,8 @@
 # Voice Cloning
-## 1. Deepvoice3
+## 1. Deepvoice3_English
 https://github.com/r9y9/deepvoice3_pytorch
 https://uos-deep-learning.tistory.com/20
-### 1.1. English
-#### 1. Data
+### 1.1. Data
 ||LJSpeech|VCTK|
 |:--:|:--:|:--:|
 |The Number of Speaker|1|110|
@@ -13,7 +12,7 @@ https://uos-deep-learning.tistory.com/20
 |Word/Charactor/Sentence|225,715 words/1,308,678 characters|44,000 sentences
 |Text|7 non-fiction books|400 sentences from a newspaper, the rainbow passage, and  an elicitation paragraph|
 
-##### LJSpeech (en)
+#### LJSpeech (en)
 - https://keithito.com/LJ-Speech-Dataset/
 - recorded 2016-2017 by LibriVox project
   > cf) texts published 1884-1964
@@ -25,7 +24,7 @@ https://uos-deep-learning.tistory.com/20
   - a QA pass was done to ensure that the text accurately matched
   - non-ASCII characters 
   
-##### VCTK (en)
+#### VCTK (en)
 - https://datashare.ed.ac.uk/handle/10283/3443
   > Original VCTK URL (http://homepages.inf.ed.ac.uk/jyamagis/page3/page58/page58.html) is unavailable.
   > cf) TensorFlow Datasets > Audio https://www.tensorflow.org/datasets/catalog/vctkv
@@ -66,7 +65,7 @@ can scoop these things into three red
 bags, and we will go meet her Wednesday
 at the train station. 
 
-#### 2. Requirements
+### 1.2. Requirements
 - CUDA >= 8.0 # https://whereisend.tistory.com/227
 - PyTorch >= v1.0.0 # https://pytorch.org/get-started/locally/
 - Python >= 3.5
@@ -86,25 +85,25 @@ conda install pytorch==1.2.0 torchvision==0.4.0 -c pytorch # windows
 pip install nnmnkwii
 ```
 
-#### 3. Installation
+### 1.3. Installation
 ```python
 git clone https://github.com/r9y9/deepvoice3_pytorch && cd deepvoice3_pytorch
 pip install -e ".[bin]"
 ```
 
-#### 4. Getting started
-1. Download dataset
+### 1.4. Getting started
+#### 1. Download dataset
 - 여기서는 LJSpeech data만 대상으로 코드를 실행할 예정임.
 - Download URL: https://keithito.com/LJ-Speech-Dataset/ (2.6GB)
 - 3에서 clone한 [deepvoice3_pytorch] 폴더 안에 [data] 폴더를 만들고, 그 안에 미리 다운 받은 LJSpeech data를 넣어 놓음.
 
-2. Preprocessing
+#### 2. Preprocessing
 
 ```python
 python preprocess.py ${dataset_name} ${dataset_path} ${out_dir} --preset=<json>
 python preprocess.py --preset=presets/deepvoice3_ljspeech.json ljspeech ./data/LJSpeech-1.0/ ./data/ljspeech # LJSpeech data
 ```
 
-### 1.2. Korean
-## 2. LPCNet
-## 3. Tensoflow TTS
+## 2. Deepvoice3_Korean
+## 3. LPCNet
+## 4. Tensoflow TTS
