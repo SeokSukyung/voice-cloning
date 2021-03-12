@@ -106,11 +106,11 @@ pip install -e ".[bin]"
 ```python
 python preprocess.py ${dataset_name} ${dataset_path} ${out_dir} --preset=<json>
 # LJSpeech data
-python preprocess.py --preset=presets/deepvoice3_ljspeech.json ljspeech ./data/LJSpeech-1.0/ ./data/ljspeech 
+python preprocess.py --preset=presets/deepvoice3_ljspeech.json ljspeech ./data/LJSpeech-1.1/ ./data/ljspeech 
 # ModuleNotFoundError: No module named 'docopt'
 # pip install docopt
 # pip3 install docopt
-# python3 preprocess.py --preset=presets/deepvoice3_ljspeech.json ljspeech ./data/LJSpeech-1.0/ ./data/ljspeech
+# python3 preprocess.py --preset=presets/deepvoice3_ljspeech.json ljspeech ./data/LJSpeech-1.1/ ./data/ljspeech
 ```
 
 #### 3. Training
