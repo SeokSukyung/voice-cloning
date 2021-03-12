@@ -104,21 +104,23 @@ pip install -e ".[bin]"
 
 #### 2. Preprocessing
 ```python
-python preprocess.py ${dataset_name} ${dataset_path} ${out_dir} --preset=<json>
-# LJSpeech data
-python preprocess.py --preset=presets/deepvoice3_ljspeech.json ljspeech ./data/LJSpeech-1.1/ ./data/ljspeech 
-# ModuleNotFoundError: No module named 'docopt'
-```
-
-```python
 # 자꾸 모듈 에러가 나서 conda 가상 환경을 만들어서 진행함.
 conda create -n pyenv36 python=3.6
 activate pyenv36
 pip install docopt
 pip install tqdm
 pip install numpy
+# 1.3. Installation의 line 2 재실행
 pip install -e ".[bin]" # 꽤 오래 걸림
 ```
+
+```python
+python preprocess.py ${dataset_name} ${dataset_path} ${out_dir} --preset=<json>
+# LJSpeech data
+python preprocess.py --preset=presets/deepvoice3_ljspeech.json ljspeech ./data/LJSpeech-1.1/ ./data/ljspeech 
+# ModuleNotFoundError: No module named 'docopt'
+```
+
 ![Preprocessing](https://user-images.githubusercontent.com/42113942/110910017-223f5700-8354-11eb-824a-7637f2c9baa0.JPG)
 
 
