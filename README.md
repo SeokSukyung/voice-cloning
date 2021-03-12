@@ -9,7 +9,7 @@
 |Capacity|2.6GB|10.9GB|
 |Number|13,100 clips||
 |Hour|about 24H||
-|word/charactor/sentence|225,715 words/1,308,678 characters|44,000 sentences
+|Word/Charactor/Sentence|225,715 words/1,308,678 characters|44,000 sentences
 |Text|7 non-fiction books|400 sentences from a newspaper, the rainbow passage, and  an elicitation paragraph|
 
 ##### LJSpeech (en)
