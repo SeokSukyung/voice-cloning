@@ -22,7 +22,9 @@ LJSpeech
 
 - recorded by LibriVox project
 - 128 kbps MP3 files
-- 
+
+2. Requirements
+2.1. 
 
 3. 
 https://github.com/r9y9/deepvoice3_pytorch
