@@ -1,7 +1,7 @@
 # Voice Cloning
 ## 1. Deepvoice3
 ### 1.1. English
-1. Data
+#### 1. Data
 - LJSpeech (en): https://keithito.com/LJ-Speech-Dataset/
 - VCTK (en): http://homepages.inf.ed.ac.uk/jyamagis/page3/page58/page58.html 
 > VCTK URL is unavailable.
@@ -23,7 +23,7 @@ LJSpeech
 - recorded by LibriVox project
 - 128 kbps MP3 files
 
-2. Requirements
+#### 2. Requirements
 - CUDA >= 8.0 # https://whereisend.tistory.com/227
 - PyTorch >= v1.0.0 # https://pytorch.org/get-started/locally/
 - Python >= 3.5
