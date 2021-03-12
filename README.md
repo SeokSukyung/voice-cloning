@@ -118,7 +118,6 @@ pip install -e ".[bin]" # 꽤 오래 걸림
 python preprocess.py ${dataset_name} ${dataset_path} ${out_dir} --preset=<json>
 # LJSpeech data
 python preprocess.py --preset=presets/deepvoice3_ljspeech.json ljspeech ./data/LJSpeech-1.1/ ./data/ljspeech 
-# ModuleNotFoundError: No module named 'docopt'
 ```
 
 ![Preprocessing](https://user-images.githubusercontent.com/42113942/110910017-223f5700-8354-11eb-824a-7637f2c9baa0.JPG)
