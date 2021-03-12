@@ -94,7 +94,7 @@ pip install -e ".[bin]"
 
 ### 1.4. Getting started
 #### 1. Download dataset
-- 여기서는 LJSpeech data만 대상으로 코드를 실행할 예정임.
+- 여기서는 우선 LJSpeech data만 대상으로 코드를 실행할 예정임.
 - Download URL: https://keithito.com/LJ-Speech-Dataset/ (2.6GB)
 - 3에서 clone한 [deepvoice3_pytorch] 폴더 안에 [data] 폴더를 만들고, 그 안에 미리 다운 받은 LJSpeech data를 넣어 놓음.
 
@@ -104,6 +104,10 @@ pip install -e ".[bin]"
 python preprocess.py ${dataset_name} ${dataset_path} ${out_dir} --preset=<json>
 # LJSpeech data
 python preprocess.py --preset=presets/deepvoice3_ljspeech.json ljspeech ./data/LJSpeech-1.0/ ./data/ljspeech 
+# ModuleNotFoundError: No module named 'docopt'
+# pip install docopt
+# pip3 install docopt
+# python3 preprocess.py --preset=presets/deepvoice3_ljspeech.json ljspeech ./data/LJSpeech-1.0/ ./data/ljspeech
 ```
 
 #### 3. Training
@@ -111,6 +115,20 @@ python preprocess.py --preset=presets/deepvoice3_ljspeech.json ljspeech ./data/L
 python train.py --data-root=${data-root} --preset=<json> --hparams="parameters you may want to override"
 # LJSpeech data
 python train.py --preset=presets/deepvoice3_ljspeech.json --data-root=./data/ljspeech/
+```
+
+#### 4. Monitor with Tensorboard
+```python
+pip install tensorboard
+tensorboard --logdir=log
+```
+
+#### 5. Synthesize from a checkpoint
+
+```python
+python synthesis.py ${checkpoint_path} ${text_list.txt} ${output_dir} --preset=<json>
+# LJSpeech data
+python synthesis.py ./checkpoint_step000020000.pth test_list.txt ./output_dir --preset=presets/deepvoice3_ljspeech.json
 ```
 ## 2. Deepvoice3_Korean
 ## 3. LPCNet
