@@ -108,9 +108,13 @@ python preprocess.py ${dataset_name} ${dataset_path} ${out_dir} --preset=<json>
 # LJSpeech data
 python preprocess.py --preset=presets/deepvoice3_ljspeech.json ljspeech ./data/LJSpeech-1.1/ ./data/ljspeech 
 # ModuleNotFoundError: No module named 'docopt'
-# pip install docopt
-# pip3 install docopt
-# python3 preprocess.py --preset=presets/deepvoice3_ljspeech.json ljspeech ./data/LJSpeech-1.1/ ./data/ljspeech
+# 자꾸 모듈 에러가 나서 conda 가상 환경을 만들어서 진행함.
+conda create -n pyenv36 python=3.6
+activate pyenv36
+pip install -e ".[bin]"
+pip install docopt
+pip install tqdm
+
 ```
 
 #### 3. Training
