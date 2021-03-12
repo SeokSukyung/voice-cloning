@@ -2,25 +2,30 @@
 ## 1. Deepvoice3
 ### 1.1. English
 #### 1. Data
-- LJSpeech (en): https://keithito.com/LJ-Speech-Dataset/
-- VCTK (en): https://datashare.ed.ac.uk/handle/10283/3443
-  > Original VCTK URL (http://homepages.inf.ed.ac.uk/jyamagis/page3/page58/page58.html) is unavailable.
-- cf) TensorFlow Datasets > Audio https://www.tensorflow.org/datasets/catalog/vctk
 
 ||LJSpeech|VCTK|
 |:--:|:--:|:--:|
+|The Number of Speaker|1|110|
 |Capacity|2.6GB|10.9GB|
 |Number|13,100 clips||
 |Hour|about 24H||
 |word/charactor/sentence|225,715 words/1,308,678 characters|44,000 sentences
 |Text|non-fiction|newspaper(w/ the rainbow passage)|
+
 |Transcription|
 
-- public domain
-- 
-- clip duration (mean: 6.57s / min: 1.11s / max: 10.10s)
-- mean words per clip: 17.23 / distinct words: 13,821
-- clips were segmented automatically based on silences (generally align with sentence or clause boundaries, but not always)
+##### LJSpeech (en)
+- https://keithito.com/LJ-Speech-Dataset/
+- clip
+  - segmented automatically based on silences (generally align with sentence or clause boundaries, but not always)
+  - duration (mean: 6.57s / min: 1.11s / max: 10.10s), mean words per clip: 17.23
+
+##### VCTK (en)
+- https://datashare.ed.ac.uk/handle/10283/3443
+  > Original VCTK URL (http://homepages.inf.ed.ac.uk/jyamagis/page3/page58/page58.html) is unavailable.
+  > cf) TensorFlow Datasets > Audio https://www.tensorflow.org/datasets/catalog/vctkv
+
+- clips were 
 - a single speaker (recorded 2016-2017)
 - 7 non-fiction books (published between 1884-1964)
 
