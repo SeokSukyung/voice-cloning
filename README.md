@@ -136,6 +136,7 @@ python train.py --preset=presets/deepvoice3_ljspeech.json --data-root=./data/ljs
     - 1) http://www.nltk.org/nltk_data/ 에서 cmudict.zip 다운로드
       ![cmudict](https://user-images.githubusercontent.com/42113942/110911278-d392bc80-8355-11eb-9b59-c81eb12bd526.JPG)
     - 2) error 메시지 내 Searched in 에 있는 디렉토리에 nltk_data 폴더를 새로 생성하고 그 아래 corpora 라는 이름의 폴더 생성후 아래 링크에서 cmudict.zip 을 다운 후 압축해제
+      ![folder](https://user-images.githubusercontent.com/42113942/110911875-97139080-8356-11eb-81f3-0bafc400980c.JPG)
 
 #### 4. Monitor with Tensorboard
 ```python
