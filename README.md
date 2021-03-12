@@ -10,12 +10,13 @@
 |Number|13,100 clips||
 |Hour|about 24H||
 |word/charactor/sentence|225,715 words/1,308,678 characters|44,000 sentences
-|Text|7 non-fiction books|400 sentences from newspaper|
+|Text|7 non-fiction books|400 sentences from a newspaper, the rainbow passage, and  an elicitation paragraph|
 
 |Transcription|
 
 ##### LJSpeech (en)
 - https://keithito.com/LJ-Speech-Dataset/
+- recorded 2016-2017
 - clip
   - segmented automatically based on silences (generally align with sentence or clause boundaries, but not always)
   - duration (mean: 6.57s / min: 1.11s / max: 10.10s), mean words per clip: 17.23
