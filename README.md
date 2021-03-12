@@ -12,7 +12,7 @@ https://uos-deep-learning.tistory.com/20
 |Hour|about 24H|-|
 |Word/Charactor/Sentence|225,715 words/1,308,678 characters|44,000 sentences
 |Text|7 non-fiction books|400 sentences from a newspaper, the rainbow passage, and  an elicitation paragraph|
-
+ 
 #### LJSpeech (en)
 - https://keithito.com/LJ-Speech-Dataset/
 - recorded 2016-2017 by LibriVox project
@@ -65,7 +65,8 @@ snake and a big toy frog for the kids. She
 can scoop these things into three red
 bags, and we will go meet her Wednesday
 at the train station. 
-
+    - The paragraph contains practically all of the sounds of English.
+      ![](http://accent.gmu.edu/images/sounds.GIF)
 ### 1.2. Requirements
 - CUDA >= 8.0 # https://whereisend.tistory.com/227
 - PyTorch >= v1.0.0 # https://pytorch.org/get-started/locally/
