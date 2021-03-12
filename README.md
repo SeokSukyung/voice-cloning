@@ -1,8 +1,9 @@
 # Voice Cloning
 ## 1. Deepvoice3
+https://github.com/r9y9/deepvoice3_pytorch
+https://uos-deep-learning.tistory.com/20
 ### 1.1. English
 #### 1. Data
-
 ||LJSpeech|VCTK|
 |:--:|:--:|:--:|
 |The Number of Speaker|1|110|
@@ -65,7 +66,6 @@ can scoop these things into three red
 bags, and we will go meet her Wednesday
 at the train station. 
 
-
 #### 2. Requirements
 - CUDA >= 8.0 # https://whereisend.tistory.com/227
 - PyTorch >= v1.0.0 # https://pytorch.org/get-started/locally/
@@ -74,19 +74,36 @@ at the train station.
 - Mecab (Japanese only)
 
 ```python
+## Version check
 nvcc -V; nvidia-smi
 PyTorch -V
 python -V
+
+## Installation
+# PyTorch
+conda install pytorch==1.2.0 torchvision==0.4.0 -c pytorch # windows
+# nnmnkwii
 pip install nnmnkwii
 ```
 
 #### 3. Installation
-
 ```python
+git clone https://github.com/r9y9/deepvoice3_pytorch && cd deepvoice3_pytorch
+pip install -e ".[bin]"
 ```
 
-https://github.com/r9y9/deepvoice3_pytorch
-https://uos-deep-learning.tistory.com/20
+#### 4. Getting started
+1. Download dataset
+- 여기서는 LJSpeech data만 대상으로 코드를 실행할 예정임.
+- Download URL: https://keithito.com/LJ-Speech-Dataset/ (2.6GB)
+- 3에서 clone한 [deepvoice3_pytorch] 폴더 안에 [data] 폴더를 만들고, 그 안에 미리 다운 받은 LJSpeech data를 넣어 놓음.
+
+2. Preprocessing
+
+```python
+python preprocess.py ${dataset_name} ${dataset_path} ${out_dir} --preset=<json>
+python preprocess.py --preset=presets/deepvoice3_ljspeech.json ljspeech ./data/LJSpeech-1.0/ ./data/ljspeech # LJSpeech data
+```
 
 ### 1.2. Korean
 ## 2. LPCNet
