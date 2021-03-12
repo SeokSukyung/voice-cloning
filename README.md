@@ -3,12 +3,18 @@
 ### 1.1. English
 #### 1. Data
 - LJSpeech (en): https://keithito.com/LJ-Speech-Dataset/
-- VCTK (en): http://homepages.inf.ed.ac.uk/jyamagis/page3/page58/page58.html 
-> VCTK URL is unavailable.
+- VCTK (en): https://datashare.ed.ac.uk/handle/10283/3443
+> original VCTK URL (http://homepages.inf.ed.ac.uk/jyamagis/page3/page58/page58.html) is unavailable.
+- cf) TensorFlow Datasets > Audio https://www.tensorflow.org/datasets/catalog/vctk
 
-LJSpeech
+||LJSpeech|VCTK|
+|:--:|:--:|:--:|
+|Amount|13,100 clips / approximately 24 hours / 225,715 words / 1,308,678 characters|44,000 sentences
+|text|non-fiction|newspaper(rainbow passage)|
+|Transcription|
+
 - public domain
-- 13,100 clips / approximately 24 hours / 225,715 words / 1,308,678 characters
+- 
 - clip duration (mean: 6.57s / min: 1.11s / max: 10.10s)
 - mean words per clip: 17.23 / distinct words: 13,821
 - clips were segmented automatically based on silences (generally align with sentence or clause boundaries, but not always)
@@ -22,6 +28,12 @@ LJSpeech
 
 - recorded by LibriVox project
 - 128 kbps MP3 files
+
+
+VCTK
+The rainbow passage: http://web.ku.edu/~idea/readings/rainbow.htm
+the text selection algorithms that increases the contextual and phonetic coverage
+(C. Veaux, J. Yamagishi and S. King, "The voice bank corpus: Design, collection and data analysis of a large regional accent speech database," https://doi.org/10.1109/ICSDA.2013.6709856)
 
 #### 2. Requirements
 - CUDA >= 8.0 # https://whereisend.tistory.com/227
