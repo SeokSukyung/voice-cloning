@@ -89,7 +89,7 @@ pip install numpy
 ```python
 ## Version check
 nvcc -V; nvidia-smi
-PyTorch -V
+torch -V
 python -V
 
 ## Installation
