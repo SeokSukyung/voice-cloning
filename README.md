@@ -71,6 +71,15 @@ at the train station.
       ![](http://accent.gmu.edu/images/sounds.GIF)
       
 ### 1.2. Requirements
+```python
+# Windows10 conda 가상환경 생성
+conda create -n pyenv36 python=3.6
+activate pyenv36
+pip install docopt
+pip install tqdm
+pip install numpy
+```
+
 - CUDA >= 8.0 # https://whereisend.tistory.com/227
 - PyTorch >= v1.0.0 # https://pytorch.org/get-started/locally/
 - Python >= 3.5
@@ -103,16 +112,7 @@ pip install -e ".[bin]"
 - 3에서 clone한 [deepvoice3_pytorch] 폴더 안에 [data] 폴더를 만들고, 그 안에 미리 다운 받은 LJSpeech data를 넣어 놓음.
 
 #### 2. Preprocessing
-```python
-# 자꾸 모듈 에러가 나서 conda 가상 환경을 만들어서 진행함.
-conda create -n pyenv36 python=3.6
-activate pyenv36
-pip install docopt
-pip install tqdm
-pip install numpy
-# 1.3. Installation의 line 2 재실행
-pip install -e ".[bin]" # 꽤 오래 걸림
-```
+
 
 ```python
 python preprocess.py ${dataset_name} ${dataset_path} ${out_dir} --preset=<json>
