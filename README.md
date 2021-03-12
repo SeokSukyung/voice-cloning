@@ -8,8 +8,8 @@ https://uos-deep-learning.tistory.com/20
 |:--:|:--:|:--:|
 |The Number of Speaker|1|110|
 |Capacity|2.6GB|10.9GB|
-|Number|13,100 clips||
-|Hour|about 24H||
+|Number|13,100 clips|-|
+|Hour|about 24H|-|
 |Word/Charactor/Sentence|225,715 words/1,308,678 characters|44,000 sentences
 |Text|7 non-fiction books|400 sentences from a newspaper, the rainbow passage, and  an elicitation paragraph|
 
@@ -102,9 +102,16 @@ pip install -e ".[bin]"
 
 ```python
 python preprocess.py ${dataset_name} ${dataset_path} ${out_dir} --preset=<json>
-python preprocess.py --preset=presets/deepvoice3_ljspeech.json ljspeech ./data/LJSpeech-1.0/ ./data/ljspeech # LJSpeech data
+# LJSpeech data
+python preprocess.py --preset=presets/deepvoice3_ljspeech.json ljspeech ./data/LJSpeech-1.0/ ./data/ljspeech 
 ```
 
+#### 3. Training
+```python
+python train.py --data-root=${data-root} --preset=<json> --hparams="parameters you may want to override"
+# LJSpeech data
+python train.py --preset=presets/deepvoice3_ljspeech.json --data-root=./data/ljspeech/
+```
 ## 2. Deepvoice3_Korean
 ## 3. LPCNet
 ## 4. Tensoflow TTS
