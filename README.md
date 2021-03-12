@@ -13,7 +13,7 @@
 |Number|13,100 clips||
 |Hour|about 24H||
 |word/charactor/sentence|225,715 words / 1,308,678 characters|44,000 sentences
-|Text|non-fiction|newspaper(including the rainbow passage)|
+|Text|non-fiction|newspaper(w/ the rainbow passage)|
 |Transcription|
 
 - public domain
