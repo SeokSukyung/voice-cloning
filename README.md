@@ -4,7 +4,7 @@
 #### 1. Data
 - LJSpeech (en): https://keithito.com/LJ-Speech-Dataset/
 - VCTK (en): https://datashare.ed.ac.uk/handle/10283/3443
-> Original VCTK URL (http://homepages.inf.ed.ac.uk/jyamagis/page3/page58/page58.html) is unavailable.
+  > Original VCTK URL (http://homepages.inf.ed.ac.uk/jyamagis/page3/page58/page58.html) is unavailable.
 - cf) TensorFlow Datasets > Audio https://www.tensorflow.org/datasets/catalog/vctk
 
 ||LJSpeech|VCTK|
