@@ -114,6 +114,7 @@ activate pyenv36
 pip install -e ".[bin]"
 pip install docopt
 pip install tqdm
+pip install numpy
 
 ```
 
