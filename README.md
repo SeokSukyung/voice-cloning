@@ -67,6 +67,7 @@ bags, and we will go meet her Wednesday
 at the train station. 
     - The paragraph contains practically all of the sounds of English.
       ![](http://accent.gmu.edu/images/sounds.GIF)
+      
 ### 1.2. Requirements
 - CUDA >= 8.0 # https://whereisend.tistory.com/227
 - PyTorch >= v1.0.0 # https://pytorch.org/get-started/locally/
