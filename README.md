@@ -66,6 +66,7 @@ can scoop these things into three red
 bags, and we will go meet her Wednesday
 at the train station. 
     - The paragraph contains practically all of the sounds of English.
+    
       ![](http://accent.gmu.edu/images/sounds.GIF)
       
 ### 1.2. Requirements
