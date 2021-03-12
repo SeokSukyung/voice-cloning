@@ -148,6 +148,9 @@ python train.py --preset=presets/deepvoice3_ljspeech.json --data-root=./data/ljs
 
   ![checkpoint](https://user-images.githubusercontent.com/42113942/110926199-71db4e00-8367-11eb-9321-dd8610150d98.JPG)
 
+  ![folder](https://user-images.githubusercontent.com/42113942/110926641-00e86600-8368-11eb-9312-b3775f738111.JPG)
+
+
 #### 4. Monitor with Tensorboard
 ```python
 pip install tensorboard
