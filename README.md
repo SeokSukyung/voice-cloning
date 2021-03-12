@@ -94,7 +94,7 @@ python -V
 
 ## Installation
 # PyTorch
-conda install pytorch==1.2.0 torchvision==0.4.0 -c pytorch # windows
+# conda install pytorch==1.2.0 torchvision==0.4.0 -c pytorch
 # nnmnkwii
 pip install nnmnkwii
 ```
