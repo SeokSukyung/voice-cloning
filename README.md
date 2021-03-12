@@ -119,6 +119,8 @@ pip install tqdm
 pip install numpy
 pip install -e ".[bin]" # 꽤 오래 걸림
 ```
+![Preprocessing](https://user-images.githubusercontent.com/42113942/110910017-223f5700-8354-11eb-824a-7637f2c9baa0.JPG)
+
 
 #### 3. Training
 ```python
