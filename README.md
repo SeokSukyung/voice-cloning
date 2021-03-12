@@ -9,8 +9,11 @@
 
 ||LJSpeech|VCTK|
 |:--:|:--:|:--:|
-|Amount|13,100 clips / approximately 24 hours / 225,715 words / 1,308,678 characters|44,000 sentences
-|text|non-fiction|newspaper(rainbow passage)|
+|Capacity|2.6GB|10.9GB|
+|Number|13,100 clips||
+|Hour|about 24H||
+|word/charactor/sentence|225,715 words / 1,308,678 characters|44,000 sentences
+|Text|non-fiction|newspaper(rainbow passage)|
 |Transcription|
 
 - public domain
