@@ -120,7 +120,7 @@ python preprocess.py ${dataset_name} ${dataset_path} ${out_dir} --preset=<json>
 python preprocess.py --preset=presets/deepvoice3_ljspeech.json ljspeech ./data/LJSpeech-1.1/ ./data/ljspeech 
 ```
 
-![Preprocessing](https://user-images.githubusercontent.com/42113942/110910017-223f5700-8354-11eb-824a-7637f2c9baa0.JPG)
+![Preprocessing](https://user-images.githubusercontent.com/42113942/110910613-f2448380-8354-11eb-8667-f7d32041e85a.JPG)
 
 
 #### 3. Training
